@@ -4,6 +4,8 @@ metadata:
   name: init-demo
   labels:
     env: prod
+  annotations:
+    configmanagement.gke.io/managed: enabled
 spec:
   containers:
   - name: nginx
