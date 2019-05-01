@@ -20,25 +20,6 @@ spec:
     volumeMounts:
     - name: workdir
       mountPath: /usr/share/nginx/html
-  # These containers are run during pod initialization
-  initContainers:
-  - name: install
-    image: busybox
-    resources:
-      limits:
-        cpu: "0.5"
-        memory: "1Mi"
-      requests:
-        cpu: "0.25"
-        memory: "1Mi"
-    command:
-    - /usr/bin/wget
-    - "-O"
-    - "/work-dir/index.html"
-    - http://kubernetes.io
-    volumeMounts:
-    - name: workdir
-      mountPath: "/work-dir"
   dnsPolicy: Default
   volumes:
   - name: workdir
