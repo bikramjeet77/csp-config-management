@@ -4,8 +4,8 @@ metadata:
    name: Tomcat
 spec:
    containers:
-   - name: Tomcat
-      image: tomcat: 8.0
+   - name: tomcat
+      image: tomcat
       resources:
       limits:
         cpu: "0.5"
