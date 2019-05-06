@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: tomcat
+        image: tomcat:8.0
         resources:
           limits:
             cpu: "0.5"
