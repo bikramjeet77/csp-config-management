@@ -17,6 +17,7 @@ spec:
       containers:
       - name: tomcat
         image: tomcat:8.0
+        command: [ "/bin/bash", "tail -f /dev/null" ]
         resources:
           limits:
             cpu: "0.5"
