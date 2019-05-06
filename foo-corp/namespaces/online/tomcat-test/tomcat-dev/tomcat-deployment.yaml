@@ -20,10 +20,10 @@ spec:
         command: [ "/bin/bash", "tail -f /dev/null" ]
         resources:
           limits:
-            cpu: "1"
+            cpu: "2"
             memory: "100Mi"
           requests:
-            cpu: "1"
+            cpu: "2"
             memory: "80Mi"
         ports:
         - containerPort: 7500
