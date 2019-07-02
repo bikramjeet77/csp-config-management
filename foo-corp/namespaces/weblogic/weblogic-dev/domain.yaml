@@ -12,7 +12,7 @@ metadata:
     weblogic.resourceVersion: domain-v2
     weblogic.domainUID: maximo
   annotations:
-    configmanagement.gke.io/managed: "enabled"
+    configmanagement.gke.io/managed: enabled
 spec:
   # The WebLogic Domain Home
   domainHome: /u01/oracle/user_projects/domains/maximo
