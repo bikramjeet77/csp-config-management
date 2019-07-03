@@ -7,7 +7,7 @@
 apiVersion: "weblogic.oracle/v3"
 kind: Domain
 metadata:
-  name: maximo-demo
+  name: maximo
   labels:
     weblogic.resourceVersion: domain-v2
     weblogic.domainUID: maximo
@@ -19,7 +19,7 @@ spec:
   # If the domain home is in the image
   domainHomeInImage: true
   # The WebLogic Server Docker image that the Operator uses to start the domain
-  image: "gcr.io/propro-maximo-poc/maximo-app:20190600"
+  image: "gcr.io/propro-maximo-poc/maximo-app:20190702"
   # imagePullPolicy defaults to "Always" if image version is :latest
   imagePullPolicy: "IfNotPresent"
   # Identify which Secret contains the credentials for pulling an image
