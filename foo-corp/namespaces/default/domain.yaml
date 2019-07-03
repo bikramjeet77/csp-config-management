@@ -73,7 +73,7 @@ spec:
   clusters:
   - clusterName: cluster-1
     serverStartState: "RUNNING"
-    restartVersion: "v2"
+    restartVersion: "v3"
     replicas: 2
   # The number of managed servers to start for unlisted clusters
   # replicas: 1
