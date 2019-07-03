@@ -19,7 +19,7 @@ spec:
   # If the domain home is in the image
   domainHomeInImage: true
   # The WebLogic Server Docker image that the Operator uses to start the domain
-  image: "gcr.io/propro-maximo-poc/maximo-app:20190702"
+  image: "gcr.io/propro-maximo-poc/maximo-app:20190700"
   # imagePullPolicy defaults to "Always" if image version is :latest
   imagePullPolicy: "IfNotPresent"
   # Identify which Secret contains the credentials for pulling an image
